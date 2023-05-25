@@ -1,12 +1,15 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
 
-const Home = () => {
+const Layout = ({ children }) => {
   return (
-    <Layout>
-      hi
-    </Layout>
+    <div className="flex min-h-screen"> 
+      <Sidebar />
+      <Navbar />
+      <main className="flex-1 bg-white">{children}</main>
+    </div>
   );
 };
 
-export default Home;
+export default Layout;
