@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [activeSubcategory, setActiveSubcategory] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const toggleLanguage = (languageId) => {
+  const toggleLanguage = (languageId: any) => {
     if (activeLanguage === languageId) {
       setActiveLanguage(null);
       setActiveCategory(null);
@@ -21,7 +21,7 @@ const Sidebar = () => {
     }
   };
 
-  const toggleCategory = (categoryId) => {
+  const toggleCategory = (categoryId: any) => {
     if (activeCategory === categoryId) {
       setActiveCategory(null);
       setActiveSubcategory(null);
@@ -93,9 +93,10 @@ const Sidebar = () => {
           sidebarOpen ? 'border-gray-300' : 'border-transparent'
         } ${
           sidebarOpen ? 'block' : 'hidden md:block'
-        }`}>
+        }`}> 
         <div className="hidden md:block">
           <ul className="px-3 py-4 overflow-y-auto rounded bg-white dark:bg-gray-800">
+            <li><h1 className='text-lg text-purple-500 pl-2 pb-2 mb-2 border-solid border-purple-300 border-b'>SnippetSphere</h1></li>
             {programmingLanguages.map((language) => (
               <li key={language.id}>
                 <button
