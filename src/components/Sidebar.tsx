@@ -31,7 +31,7 @@ const Sidebar = () => {
     }
   };
 
-  const toggleSubcategory = (subcategory) => {
+  const toggleSubcategory = (subcategory: any) => {
     if (activeSubcategory === subcategory) {
       setActiveSubcategory(null);
     } else {
