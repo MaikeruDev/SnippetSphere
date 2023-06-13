@@ -1,8 +1,9 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
+import { ReactNode } from 'react';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
       <div className="flex min-h-screen"> 
