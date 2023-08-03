@@ -11,7 +11,7 @@ SnippetSphere is a platform built using Next.js and TypeScript, designed to prov
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/your-username/snippetsphere.git`
+1. Clone the repository: `git clone https://github.com/maikerudev/snippetsphere.git`
 2. Install dependencies: `cd snippetsphere && npm install`
 3. Start the development server: `npm run dev`
 4. Access the platform at `http://localhost:3000`
